@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Movendo elementos usando DOM (appeendChild)</title>
+  <style>
+      body {
+          margin: 0 auto;
+      }
+      .box {
+          
+          border : 1px dashed red;
+      }
+      .container {
+          margin-left: 150px;
+          margin-right: 150px;
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Drag and Drop Browser's</h2>
+ 
+  <p id="text" ondragstart="drag(this, event)"></p><br/>
+  <img src="https://mainline.i3s.unice.fr/mooc/ABiBCwZ.png" id="cr" 
+       ondragstart="drag(this, event)" alt="Logo Chrome">
+  <img src="https://mainline.i3s.unice.fr/mooc/n7xo93U.png" id="ff" 
+       ondragstart="drag(this, event)" alt="Logo Firefox">
+  <img src="https://mainline.i3s.unice.fr/mooc/ugUmuGQ.png" id="ie" 
+       ondragstart="drag(this, event)" alt="Logo IE">
+  <img src="https://mainline.i3s.unice.fr/mooc/jfrNErz.png" id="op" 
+       ondragstart="drag(this, event)" alt="Logo Opera">
+  <img src="https://mainline.i3s.unice.fr/mooc/gDJCG0l.png" id="sf" 
+       ondragstart="drag(this, event)" alt="Logo Safari"><br/>
+
+  
+  <div class="box" ondragover="return false" ondrop="drop(this, event)">
+      <p>Arraste pra cá seu web browser preferido</p>
+  </div>
+
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
