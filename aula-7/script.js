@@ -46,18 +46,11 @@ square.forEach(id => {
                     result = result + 1;
                     document.querySelector("#score").textContent = result;
              }
-            id.classList.remove('square');
-            id.classList.add('square-in');
-        })
+            id.className = "square-in";
 
-        id.addEventListener('mouseup', ()=>{
-
-             setTimeout(() => {
-                id.classList.remove('square-in');
-                id.classList.add('square');
-             }, 100);
-          
-        
+            setTimeout(() => {
+                id.className = "square";
+            }, 100);
         })
 })
 
