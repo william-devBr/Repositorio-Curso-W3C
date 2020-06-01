@@ -1,0 +1,29 @@
+body {
+
+    background-color: dimgray;
+    margin: 0 auto;
+}
+
+.content {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.content button {
+     clear: both;
+     display: block;
+}
+#video {
+
+    width: 499px;
+    height: 499px;
+}
+
+#current {
+    color: white;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
