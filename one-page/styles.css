@@ -1,0 +1,157 @@
+html, body, *  {
+       margin: 0 auto;
+       padding: 0;
+  }
+#load-page {
+
+  display: none;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.5);
+ text-align: center;
+ line-height: 500px;
+ color : #fff;
+ font-size: 24px;
+ font-weight: bold;
+}
+header {
+  font-size: 24px;
+  height: 75px;
+  background-color: darkkhaki;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 75px;
+  color: white;
+  text-shadow: 0 0 2px #000;
+  border-bottom: 2px solid dimgray;
+}
+header > h3 {
+   margin-left: 45px;
+}
+.profile_settings {
+   position: absolute;
+   right: 25px;
+   top: 25px;
+}
+.users {
+  display: none;
+  list-style: none;
+
+}
+.users  li > a, 
+.nav-link  li > a,
+ .link-section  li > a {
+  text-decoration: none;
+}
+.users > li {
+  cursor: pointer;
+  background-color: gainsboro;
+  padding: 8px;
+  border-bottom: 1px solid #000;
+}
+.users > li:hover {
+  background-color: white;
+  color : black;
+}
+.profile_settings:hover > .users{
+   display: block;
+}
+.container {
+   margin : 15px;
+}
+
+aside {
+  width: 175px;
+  float: left;
+  margin-left: 45px;
+  border: 1px solid #ccc;
+}
+.nav-link, .link-section {
+  list-style: none;
+}
+ .title-cat {
+   text-align: center;
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav-link > li {
+  padding: 8px;
+  margin: 5px;
+}
+section {
+  max-width: 599px;
+}
+.link-section > li {
+  margin-top: 15px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+.thumbnail {
+  width: 100%;
+}
+
+.colapse {
+  display: none;
+}
+.list-item {
+  cursor: pointer;
+}
+@media (max-width : 360px ){
+
+   .side-cat {
+     display: none;
+   }
+   .thumbnail, img {
+     margin-left: -15px;
+     margin-right: -15px;
+     width: 100%;
+     padding: 0;
+     display: flex;
+     flex-wrap: wrap;
+     position: relative;
+   }
+  figure, img {
+    width: 100%;
+  }
+  
+}
+@media (min-width : 799px){
+
+   figure {
+     width: 77%;
+     height: auto;
+   }
+}
+.page {
+     
+  display: block;
+  background-color: rgb(44, 43, 43);
+  color : white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100% !important;
+  z-index: 1;
+}
+.none {
+  transition-duration: 2s,2s;
+  transition: 2s linear 3s;
+  display: none;
+  
+  
+}
+
+span.close {
+
+   position: absolute;
+   top : 25px;
+   right: 25px;
+   color : gray;
+   cursor: pointer;
+}
